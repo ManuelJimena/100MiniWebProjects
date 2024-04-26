@@ -1,0 +1,46 @@
+<!-- Puedes crear la estructura básica con ! y enter -->
+
+<!DOCTYPE html> <!-- Declaración del tipo de documento. Indica que es un documento HTML5 -->
+<html lang="en"> <!-- Elemento raíz de una página HTML. El atributo 'lang' especifica el idioma del documento, cambia a 'es' para español -->
+<head> <!-- Contenedor para los metadatos del documento (datos sobre datos) -->
+    <meta charset="UTF-8"> <!-- Define el conjunto de caracteres utilizado en el documento, UTF-8 soporta la mayoría de los idiomas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Se utiliza para el diseño web adaptable. Establece el ancho de la página para seguir el ancho de la pantalla del dispositivo y permite un zoom inicial -->
+    <title>Aprendiendo HTML</title> <!-- Especifica un título para el documento. Se muestra en la barra de título o pestaña del navegador y es importante para la accesibilidad y SEO -->
+    <meta name="description" content="Este sitio web sirve para aprender HTML de manera sencilla y práctica."> <!-- Descripción breve del sitio para mejorar el SEO -->
+</head>
+<body> <!-- Contiene el contenido visual y funcional del documento, como texto, hipervínculos, imágenes, tablas, listas, etc. -->
+
+    <header> <!-- Representa un contenedor para contenido introductorio. Es bueno para accesibilidad y SEO -->
+        <h1>Bienvenido a Aprendiendo Html</h1> <!-- El título principal de la página, crucial para SEO y accesibilidad -->
+    </header>
+
+    <nav> <!-- Sección de navegación principal, contiene enlaces a otras páginas. Esencial para la navegación con teclado y accesibilidad -->
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre">Sobre nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio" aria-label="Introducción a HTML"> <!-- Representa una sección temática distinta, con atributo ARIA para accesibilidad -->
+        <h2>Introducción al HTML</h2>
+        <p>HTML es el lenguaje de marcado estándar para crear páginas web.</p>
+    </section>
+
+    <div class="container"> <!-- Este <div> con la clase "container" sirve como un contenedor para agrupar y estilizar elementos. Puede ayudar en la organización del contenido y en la aplicación de estilos específicos. -->
+        <h3>Contenido dentro de &lt;div&gt;</h3>
+        <p>Este es un ejemplo de cómo usar un &lt;div&gt; con una clase específica.</p>
+    </div>
+
+    <section id="sobre" aria-label="Información sobre el sitio"> <!-- Otra sección temática con atributo ARIA -->
+        <h2>Sobre nosotros</h2>
+        <p>Este sitio fue creado como un recurso para aprender HTML.</p>
+    </section>
+
+    <footer> <!-- Pie de página del documento, contiene información como autoría, derechos de autor, enlaces a términos legales, etc. -->
+        <h2>Footer</h2>
+        <p>Copyright 2024. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
