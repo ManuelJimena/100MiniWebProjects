@@ -21,10 +21,6 @@ Este repositorio contiene los proyectos y lecciones para aprender JavaScript, en
 - **Lección 10**: Trabajar con APIs 🌐
 - **Lección 11**: Asincronía en JavaScript ⏳
 
-### Módulo 4: Proyecto Final
-- **Lección 12**: Desarrollo del Proyecto Final 🎯
-- **Lección 13**: Publicación del proyecto en GitHub 📤
-
 ## 📖 Repositorio
 Cada módulo en este repositorio contiene una carpeta separada con los archivos necesarios:
 - `index.html`: Archivo base para la estructura de la página.
