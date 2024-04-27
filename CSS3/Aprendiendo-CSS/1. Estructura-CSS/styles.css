@@ -1,0 +1,112 @@
+/* Estilos específicos de página */
+
+/* Estilos para el reseteo de estilos */
+* {
+    margin: 0; /* Margen */
+    padding: 0; /* Relleno */
+    box-sizing: border-box; /* Modelo de caja */
+}
+
+/* Estilos globales */
+:root {
+    --primary-color: #007bff; /* Color primario */
+    --secondary-color: #6c757d; /* Color secundario */
+    --tertiary-color: #020202; /* Color terciario */
+    --success-color: #28a745; /* Color de éxito */
+    --danger-color: #dc3545; /* Color de peligro */
+    --warning-color: #ffc107; /* Color de advertencia */
+    --info-color: #17a2b8; /* Color de información */
+    --light-color: #cccccc; /* Color claro */
+    --dark-color: #343a40; /* Color oscuro */
+    --font-family: Arial, Helvetica, sans-serif; /* Familia de fuentes */
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: var(--font-family); /* Aplicar la familia de fuentes definida */
+    background-color: var(--light-color); /* Color de fondo */
+    color: var(--dark-color); /* Color de texto */  
+}
+
+/* Estilos para el container */
+.container {
+    width: 70%; /* Ancho del container */
+    margin: 0 auto; /* Centrar el container */
+    border: 1px solid var(--tertiary-color); /* Borde del container */
+}
+
+/* Estilos para el encabezado */
+header {
+    background: var(--danger-color); /* Color de fondo */
+    height: 100px; /* Altura del encabezado */
+    width: 100%; /* Ancho del encabezado */
+    margin: 0px; /* Margen del encabezado */
+    text-align: center; /* Alineación del texto */
+    line-height: 100px; /* Altura de línea */
+    color: var(--light-color); /* Color del texto */
+    border-bottom: 3px dashed var(--tertiary-color); /* Borde inferior */  
+}
+
+/* Estilos para la navegación */
+nav {
+    background: var(--info-color); /* Color de fondo */
+    height: 50px; /* Altura de la navegación */ 
+    border-bottom: 1px solid var(--tertiary-color); /* Borde inferior */ 
+}
+
+/* Estilos para la navegación */
+nav ul li{
+    float: left; /* Alinear a la izquierda */
+    list-style: none; /* Quitar viñetas */
+    margin: 10px; /* Margen */
+    line-height: 30px; /* Altura de línea */
+}
+
+.clearfix {
+    clear: both; /* Limpiar flotados */
+}
+
+.content {
+    float: left; /* Alinear a la izquierda */
+    width: 80%; /* Ancho del contenido */
+    background: var(--success-color); /* Color de fondo */
+    min-height: 500px; /* Altura mínima del contenido */
+    padding: 40px; /* Relleno */
+}
+
+aside {
+    float: left; /* Alinear a la izquierda */
+    width: 20%; /* Ancho de la barra lateral */
+    background: var(--warning-color); /* Color de fondo */
+    min-height: 500px; /* Altura mínima de la barra lateral */
+    padding: 10px; /* Relleno */
+}
+
+.article {
+    color: var(--light-color); /* Color del texto */
+    margin-top: 15px; /* Margen superior */
+    margin-bottom: 15px; /* Margen inferior */
+    padding-bottom: 10px; /* Relleno inferior */
+    border-bottom: 1px solid var(--light-color) /* Borde inferior */
+}
+
+.article:first-child {
+    padding-top: 10px; /* Relleno superior */
+    border-top: 1px solid var(--light-color) /* Borde superior */
+}
+
+.article h2 {
+    color: var(--dark-color); /* Color del texto */
+    font-size: 25px; /* Tamaño de la fuente */
+    margin-bottom: 10px; /* Margen inferior */
+    text-transform: uppercase; /* Transformación de texto a mayúsculas*/
+}
+
+/* Estilos para el pie de página */
+footer {
+    background: var(--tertiary-color); /* Color de fondo */
+    color: var(--light-color); /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    height: 50px; /* Altura del pie de página */
+    line-height: 50px; /* Altura de línea */
+}

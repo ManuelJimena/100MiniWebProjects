@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas HTML</title>
+</head>
+<body>
+    <!-- Imagen: Especifica la fuente y la descripción alternativa para accesibilidad -->
+    <img src="https://res.cloudinary.com/dhjmt9vvq/image/upload/v1714151700/klipartz.com_owdg8j.png" alt="Descripción de la imagen">
+
+    <!-- Encabezado h1: Debe usarse solo una vez por página, define el tema principal de la página -->
+    <h1>Etiquetas HTML</h1>
+
+    <!-- Párrafo: Define un bloque de texto -->
+    <p>Este es un párrafo de texto.</p>
+
+    <!-- Lista ordenada: Enumera ítems en un orden específico -->
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ol>
+
+    <!-- Lista no ordenada: Enumera ítems sin un orden específico -->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+
+    <!-- Tabla: Organiza datos en filas y columnas, con un título descriptivo -->
+    <table border="1">
+        <caption>Tabla de ejemplo</caption>
+        <tr>
+            <th>Encabezado 1</th>
+            <th>Encabezado 2</th>
+        </tr>
+        <tr>
+            <td>Dato 1</td>
+            <td>Dato 2</td>
+        </tr>
+    </table>
+
+    <!-- Enlace: Dirige a otra página o recurso, abre en una nueva pestaña para mantener la página actual abierta -->
+    <a href="https://www.example.com" target="_blank">Enlace</a>
+
+    <!-- Formulario: Colección de campos para enviar información -->
+    <form>
+        <fieldset>
+            <legend>Formulario de contacto</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+            <input type="submit" value="Enviar">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Ingrese su email">
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+
+    <!-- Select con options: Permite al usuario seleccionar una opción de una lista desplegable -->
+    <select id="options" class="opciones">
+        <option value="opcion1">Opción 1</option>
+        <option value="opcion2">Opción 2</option>
+        <option value="opcion3">Opción 3</option>
+    </select>
+
+    <!-- Barra lateral: Contiene un formulario de búsqueda -->
+    <aside class="sidebar">
+        <h2>Barra lateral</h2>
+        <form>
+            <input type="text">
+            <input type="submit" value="Buscar">
+        </form>
+    </aside>
+
+    <article>
+        <!-- Artículo: contenido adicional -->
+        <!-- Encabezados subsecuentes: Organizan y estructuran el contenido subordinado -->
+        <h2>Título de nivel 2</h2>
+        <h3>Título de nivel 3</h3>
+
+        <!-- Divisor horizontal: Usado para separar secciones de contenido -->
+        <hr>
+    
+        <!-- Salto de línea: Crea una ruptura en el contenido Advertencia: 'br' puede crear problemas de accesibilidad -->
+        <br>
+    </article>
+
+</body>
+</html>
