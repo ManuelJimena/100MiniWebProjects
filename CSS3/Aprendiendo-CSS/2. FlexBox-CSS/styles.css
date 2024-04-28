@@ -1,0 +1,77 @@
+* {
+    margin: 0; /* Elimina los márgenes de todos los elementos */
+    padding: 0; /* Elimina el padding de todos los elementos */
+    box-sizing: border-box; /* Incluye el padding y border en el cálculo del ancho/alto del elemento */
+}
+
+body {
+    background-color: beige; /* Color de fondo de la página */
+    font-family: 'Courier New', Courier, monospace; /* Tipo de fuente del texto */
+}
+
+.flex-container {
+    border: 1px solid black; /* Borde del contenedor */
+    border-radius: 5px; /* Redondeo de los bordes del contenedor */
+    background: rgb(161, 161, 161); /* Color de fondo del contenedor */
+    padding: 20px; /* Espacio entre el borde del contenedor y sus elementos internos */
+    display: flex; /* Establece el modelo de caja flexible para los elementos internos */
+    justify-content: center; /* Alinea horizontalmente los elementos al centro */
+    /* justify-content: space-around; Alinea horizontalmente los elementos con espacio alrededor */
+    /* justify-content: space-between; Alinea horizontalmente los elementos con espacio entre ellos */
+    /* justify-content: space-evenly; Alinea horizontalmente los elementos con espacio uniforme */
+    margin: 2% 10% 0% 10%; /* Margenes externos del contenedor: arriba 2%, laterales 10%, abajo 0% */
+    gap: 10px; /* Espacio entre los elementos internos */
+}
+
+.columna {
+    /* flex-direction: column; Los elementos internos se organizan en columna (vertical) */
+    flex-flow: column wrap; /* Los elementos internos se organizan en columna y se envuelven si no caben */
+}
+
+.fila {
+    /* flex-direction: row; Los elementos internos se organizan en fila (horizontal) */
+    flex-flow: row wrap; /* Los elementos internos se organizan en fila y se envuelven si no caben */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+}
+
+.caja {
+    border: 1px solid rgb(41, 41, 41); /* Borde de cada caja */
+    background-color: white; /* Color de fondo de cada caja */
+    color: black; /* Color del texto dentro de la caja */
+    font-weight: bold; /* Negrita para el texto dentro de la caja */
+    width: 120px; /* Ancho fijo para cada caja */
+    height: 120px; /* Altura fija para cada caja */
+    line-height: 120px; /* Altura de línea para centrar el texto verticalmente */
+    text-align: center; /* Alinea el texto al centro horizontalmente */
+    margin: 5px; /* Espacio entre las cajas */
+}
+
+.c1 {
+    background: lightskyblue; /* Color de fondo de la caja 1 */
+    width: 200px; /* Ancho fijo para la caja 1 */
+    order: 2; /* Orden de la caja 1 en la fila */
+    flex-grow: 4; /* Factor de crecimiento de la caja 1 */
+}
+
+.c2 {
+    background: lightblue; /* Color de fondo de la caja 2 */
+    width: 200px; /* Ancho fijo para la caja 2 */
+    order: 3; /* Orden de la caja 2 en la fila */
+    flex-grow: 1; /* Factor de crecimiento de la caja 2 */
+}
+
+.c3 {
+    background: lightcyan; /* Color de fondo de la caja 3 */
+    width: 200px; /* Ancho fijo para la caja 3 */
+    order: 1; /* Orden de la caja 3 en la fila */
+    flex-grow: 1; /* Factor de crecimiento de la caja 3 */
+}
+
+footer {
+    text-align: center; /* Alinea el texto al centro horizontalmente */
+    margin-top: 20px; /* Espacio entre el contenedor y el pie de página */
+    background: gray; /* Color de fondo del pie de página */
+    color: white; /* Color del texto del pie de página */
+    height: 50px; /* Altura del pie de página */
+    line-height: 50px; /* Altura de línea para centrar el texto verticalmente */
+}
