@@ -1,0 +1,190 @@
+/* Reset CSS para estandarizar el espacio entre navegadores */
+* {
+    margin: 0; /* Elimina todos los márgenes externos de los elementos */
+    padding: 0; /* Elimina todos los rellenos internos de los elementos */
+    box-sizing: border-box; /* Incluye el padding y border dentro del ancho y alto del elemento */
+}
+
+/* Estilos base para el cuerpo del documento */
+body {
+    background-color: beige; /* Establece un color de fondo beige para todo el documento */
+    font-family: 'Courier New', Courier, monospace; /* Establece la familia de fuentes a Courier New para todo el texto */
+}
+
+h1 {
+    text-align: center; /* Alinea el texto al centro */
+    margin-top: 20px; /* Establece un margen superior de 20px */
+}
+
+/* Estilos para el contenedor que usa CSS Grid */
+.grid-container {
+    display: grid; /* Establece el tipo de display como grid */
+    width: 80%; /* Ancho del contenedor será el 80% del elemento padre */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    background-color: lightskyblue; /* Color de fondo del contenedor */
+    border: 1px solid black; /* Borde del contenedor con 1px de grosor y color negro */
+    margin-top: 20px; /* Establece un margen superior de 20px */
+}
+
+.example1 {
+    grid-template-columns: repeat(4, 1fr); /* Define cuatro columnas de igual tamaño */
+    /* grid-template-columns: auto auto auto auto; Define cuatro columnas que ajustan su ancho automáticamente al contenido */
+    /* grid-template-columns: 150px 1fr 2fr; Configura tres columnas con anchos mixtos, una fija y dos proporcionales */
+    /* grid-template-columns: 100px 200px 300px; Establece tres columnas con anchos fijos específicos */
+    grid-template-rows: auto; /* Define el tamaño automático de las filas */
+    grid-gap: 20px; /* Espacio entre las celdas del grid */
+}
+
+.example2 {
+    grid-template-columns:auto auto auto auto; /* Define cuatro columnas con anchos automáticos */
+    justify-content: space-around; /* Distribuye el espacio sobrante entre las columnas */
+}
+
+.example3 {
+    height: 650px;
+    grid-template-columns:70% auto; /* Define dos columnas con anchos automáticos */
+    grid-template-rows: 20% 10% 60% auto; /* Define el tamaño de las filas: 20%, 10%, 60% y automático */
+}
+
+.example4 {
+    height: 650px;
+    grid-template-areas: 'cabecera cabecera'
+                         'menu menu'
+                         'contenido lateral'
+                         'footer footer'; /* Define las áreas del grid */
+    grid-template-columns:70% auto; /* Define dos columnas con anchos automáticos */
+    grid-template-rows: 20% 10% 60% auto; /* Define el tamaño de las filas: 20%, 10%, 60% y automático */
+}
+
+/* Estilos para las cajas dentro del grid */
+.caja {
+    width: 150px; /* Ancho fijo de cada caja */
+    height: 150px; /* Altura fija de cada caja */
+    background-color: white; /* Color de fondo de las cajas */
+    border: 4px solid black; /* Borde de las cajas con 4px de grosor y color negro */
+    margin: 15px; /* Margen alrededor de cada caja */
+    text-align: center; /* Alinea el texto al centro de cada caja */
+    line-height: 150px; /* Altura de la línea igual a la altura de la caja para centrar el contenido verticalmente */
+}
+
+.c1 {
+    width: auto; /* Ancho automático */
+    grid-column: 1/5; /* Ocupa las columnas 1 a 4 */
+    background: lightcyan; /* Color de fondo lightcyan */
+}
+
+.c2 {
+    width: auto; /* Ancho automático */
+    grid-column: 1/3; /* Ocupa las columnas 1 y 2 */
+    background: lightcoral; /* Color de fondo lightcoral */
+}
+
+.c3 {
+    width: auto; /* Ancho automático */
+    grid-column: 3/5; /* Ocupa las columnas 3 y 4 */
+    background: lightcoral; /* Color de fondo lightcoral */
+}
+
+.c4 {
+    width: auto; /* Ancho automático */
+    grid-area: 3/3; /* Ocupa las columnas 3 y 3 */
+    background: lightsteelblue; /* Color de fondo lightsteelblue */
+}
+
+.a1 {
+    width: auto; /* Ancho automático */
+    height: auto; /* Altura automática */
+    grid-column: 1 / span 2; /* Ocupa 2 columnas a partir de la columna 1 */
+    background: lightcyan; /* Color de fondo lightcyan */
+    line-height: 0px; /* Altura de la línea eliminada */
+    padding: 20px; /* Relleno de 20px */
+}
+
+.a2 {
+    width: auto; /* Ancho automático */
+    height: auto; /* Altura automática */
+    grid-column: 1 / span 2; /* Ocupa 2 columnas a partir de la columna 1 */
+    background: lightgoldenrodyellow; /* Color de fondo lightgoldenrodyellow */
+    line-height: 0px; /* Altura de la línea eliminada */
+    padding: 20px; /* Relleno de 20px */
+}
+
+.a3 {
+    width: auto; /* Ancho automático */
+    height: auto; /* Altura automática */
+    background: lightcoral; /* Color de fondo lightcoral */
+    line-height: 0px; /* Altura de la línea eliminada */
+    padding: 20px; /* Relleno de 20px */
+}
+
+.a4 {
+    width: auto; /* Ancho automático */
+    height: auto; /* Altura automática */
+    background: lightsteelblue; /* Color de fondo lightsteelblue */
+    line-height: 0px; /* Altura de la línea eliminada */
+    padding: 20px; /* Relleno de 20px */
+}
+
+.a5 {
+    width: auto; /* Ancho automático */
+    height: auto; /* Altura automática */
+    grid-column: 1 / span 2; /* Ocupa 2 columnas a partir de la columna 1 */
+    background: lightcoral; /* Color de fondo lightcoral */
+    line-height: 0px; /* Altura de la línea eliminada */
+    padding: 20px; /* Relleno de 20px */
+}
+
+.b1 {
+    width: auto; /* Ancho automático */
+    height: auto; /* Altura automática */
+    grid-area: cabecera; /* Área del grid: cabecera */
+    background: lightcyan; /* Color de fondo lightcyan */
+    line-height: 0px; /* Altura de la línea eliminada */
+    padding: 20px; /* Relleno de 20px */
+}
+
+.b2 {
+    width: auto; /* Ancho automático */
+    height: auto; /* Altura automática */
+    grid-area: menu; /* Área del grid: menú */
+    background: lightgoldenrodyellow; /* Color de fondo lightgoldenrodyellow */
+    line-height: 0px; /* Altura de la línea eliminada */
+    padding: 20px; /* Relleno de 20px */
+}
+
+.b3 {
+    width: auto; /* Ancho automático */
+    height: auto; /* Altura automática */
+    grid-area: contenido; /* Área del grid: contenido */
+    background: lightcoral; /* Color de fondo lightcoral */
+    line-height: 0px; /* Altura de la línea eliminada */
+    padding: 20px; /* Relleno de 20px */
+}
+
+.b4 {
+    width: auto; /* Ancho automático */
+    height: auto; /* Altura automática */
+    grid-area: lateral; /* Área del grid: lateral */
+    background: lightsteelblue; /* Color de fondo lightsteelblue */
+    line-height: 0px; /* Altura de la línea eliminada */
+    padding: 20px; /* Relleno de 20px */
+}
+
+.b5 {
+    width: auto; /* Ancho automático */
+    height: auto; /* Altura automática */
+    grid-area: footer; /* Área del grid: pie de página */
+    background: lightcoral; /* Color de fondo lightcoral */
+    line-height: 0px; /* Altura de la línea eliminada */
+    padding: 20px; /* Relleno de 20px */
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center; /* Alinea el texto al centro */
+    margin-top: 20px; /* Establece un margen superior de 20px */
+    background: gray; /* Color de fondo del pie de página */
+    color: white; /* Color de texto dentro del pie de página */
+    height: 50px; /* Altura del pie de página */
+    line-height: 50px; /* Altura de la línea para centrar el texto verticalmente */
+}

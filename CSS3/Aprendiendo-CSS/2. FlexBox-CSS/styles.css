@@ -9,6 +9,11 @@ body {
     font-family: 'Courier New', Courier, monospace; /* Tipo de fuente del texto */
 }
 
+h1 {
+    text-align: center; /* Alinea el texto al centro horizontalmente */
+    margin-top: 20px; /* Espacio entre el título y el contenedor */
+}
+
 .flex-container {
     border: 1px solid black; /* Borde del contenedor */
     border-radius: 5px; /* Redondeo de los bordes del contenedor */
